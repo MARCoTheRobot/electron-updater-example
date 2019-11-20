@@ -26,7 +26,8 @@
     "appId": "marco.electronappexample",
     "win": {
       "target": [
-		  "zip"
+		  "zip",
+		  "nsis"
       ]
     }
   }
