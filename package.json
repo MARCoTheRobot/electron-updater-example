@@ -1,9 +1,9 @@
 {
   "name": "electron-updater-example",
-  "version": "0.7.1",
+  "version": "0.8.2",
   "main": "main.js",
   "description": "electron-updater example project",
-  "author": "Matt Haggard",
+  "author": "Jacob Boyle",
   "scripts": {
     "publish": "build -p always"
   },
@@ -16,12 +16,18 @@
     "electron-updater": "^4.0.6"
   },
   "build": {
-    "appId": "com.github.iffy.electronupdaterexample",
-    "mac": {
-      "category": "your.app.category.type",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "MARCoTheRobot",
+		 "repo": "electron-updater-example"
+      }
+    ],
+    "appId": "marco.electronappexample",
+    "win": {
       "target": [
-        "zip",
-        "dmg"
+		  "zip",
+        "msi"
       ]
     }
   }
